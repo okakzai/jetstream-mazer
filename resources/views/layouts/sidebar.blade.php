@@ -76,8 +76,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-breadcrumb.html" class="submenu-link">Breadcrumb</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Breadcrumb' ? 'active' : '' }}">
+                            <a href="{{ url('/component/breadcrumb') }}" class="submenu-link">Breadcrumb</a>
                             
                         </li>
                         

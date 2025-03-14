@@ -53,4 +53,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/breadcrumb', function () {
+        return view('mazer/component/breadcrumb',[
+            'title' => 'Breadcrumb',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });
