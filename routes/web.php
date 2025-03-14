@@ -31,7 +31,7 @@ Route::middleware([
     })->name('dashboard');
 
     Route::get('/component/accordion', function () {
-        return view('mazer/component/accordion',[
+        return view('mazer/accordion',[
             'title' => 'Accordion',
             'menu' => true,
             'submenu' => true,
