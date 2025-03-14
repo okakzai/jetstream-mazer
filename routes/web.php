@@ -229,4 +229,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/rating', function () {
+        return view('mazer/extra-component/rating',[
+            'title' => 'Rating',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });

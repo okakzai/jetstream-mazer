@@ -200,8 +200,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-rating.html" class="submenu-link">Rating</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Rating' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/rating') }}" class="submenu-link">Rating</a>
                             
                         </li>
                         
