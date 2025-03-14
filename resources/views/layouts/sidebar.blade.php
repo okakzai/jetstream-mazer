@@ -185,8 +185,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-flag.html" class="submenu-link">Flag</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Flag' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/flag') }}" class="submenu-link">Flag</a>
                             
                         </li>
                         

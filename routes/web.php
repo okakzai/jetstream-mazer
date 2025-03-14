@@ -205,4 +205,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/flag', function () {
+        return view('mazer/extra-component/flag',[
+            'title' => 'Flag',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });
