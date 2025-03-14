@@ -173,4 +173,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/avatar', function () {
+        return view('mazer/extra-component/avatar',[
+            'title' => 'Avatar',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });

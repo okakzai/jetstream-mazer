@@ -53,7 +53,7 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub {{ ($menu ?? '') == 'component' ? 'active' : '' }}">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'component' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Components</span>
@@ -157,16 +157,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'extra-component' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-collection-fill"></i>
                         <span>Extra Components</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-avatar.html" class="submenu-link">Avatar</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Avatar' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/avatar') }}" class="submenu-link">Avatar</a>
                             
                         </li>
                         
