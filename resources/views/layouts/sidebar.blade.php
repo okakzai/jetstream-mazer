@@ -270,8 +270,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-select.html" class="submenu-link">Select</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Select' ? 'active' : '' }}">
+                            <a href="{{ url('/form/select') }}" class="submenu-link">Select</a>
                             
                         </li>
                         

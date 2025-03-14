@@ -293,4 +293,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/select', function () {
+        return view('mazer/form/select',[
+            'title' => 'Select',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });
