@@ -317,4 +317,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/textarea', function () {
+        return view('mazer/form/textarea',[
+            'title' => 'Textarea',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });

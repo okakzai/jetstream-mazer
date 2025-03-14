@@ -285,8 +285,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-textarea.html" class="submenu-link">Textarea</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Textarea' ? 'active' : '' }}">
+                            <a href="{{ url('/form/textarea') }}" class="submenu-link">Textarea</a>
                             
                         </li>
                         
