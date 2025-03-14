@@ -252,16 +252,16 @@
                 <li class="sidebar-title">Forms &amp; Tables</li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'form' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-hexagon-fill"></i>
                         <span>Form Elements</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-input.html" class="submenu-link">Input</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Input' ? 'active' : '' }}">
+                            <a href="{{ url('/form/input') }}" class="submenu-link">Input</a>
                             
                         </li>
                         

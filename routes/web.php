@@ -277,4 +277,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/input', function () {
+        return view('mazer/form/input',[
+            'title' => 'Input',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });
