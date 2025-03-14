@@ -30,11 +30,11 @@ Route::middleware([
         ]);
     })->name('dashboard');
 
-    Route::get('/accordion', function () {
-        return view('accordion',[
+    Route::get('/component/accordion', function () {
+        return view('mazer/component/accordion',[
             'title' => 'Accordion',
             'menu' => true,
             'submenu' => true,
         ]);
-    })->name('accordion');
+    })->name('component.accordion');
 });

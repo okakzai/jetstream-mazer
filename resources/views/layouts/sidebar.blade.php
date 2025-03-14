@@ -43,7 +43,7 @@
                 <li class="sidebar-title">Menu</li>
                 
                 <li
-                    class="sidebar-item {{ ($title == 'Dashboard') ? 'active' : '' }}">
+                    class="sidebar-item {{ ($title ?? '') == 'Dashboard' ? 'active' : '' }}">
                     <a href="{{url('/dashboard')}}" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
@@ -53,16 +53,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub {{ ($menu == true) ? 'active' : '' }}">
+                    class="sidebar-item  has-sub {{ ($menu ?? '') == true ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Components</span>
                     </a>
                     
-                    <ul class="submenu {{ ($submenu == true) ? 'active' : '' }}">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  {{ ($title == 'Accordion') ? 'active' : '' }}">
-                            <a href="{{ url('/accordion') }}" class="submenu-link">Accordion</a>
+                        <li class="submenu-item  {{ ($title ?? '') == 'Accordion' ? 'active' : '' }}">
+                            <a href="{{ url('/component/accordion') }}" class="submenu-link">Accordion</a>
                             
                         </li>
                         
