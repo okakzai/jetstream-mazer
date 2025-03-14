@@ -77,4 +77,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/carousel', function () {
+        return view('mazer/component/carousel',[
+            'title' => 'Carousel',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

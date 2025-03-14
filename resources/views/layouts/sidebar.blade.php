@@ -91,8 +91,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-carousel.html" class="submenu-link">Carousel</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Carousel' ? 'active' : '' }}">
+                            <a href="{{ url('/component/carousel') }}" class="submenu-link">Carousel</a>
                             
                         </li>
                         
