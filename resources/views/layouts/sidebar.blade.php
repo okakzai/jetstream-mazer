@@ -136,13 +136,13 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-spinner.html" class="submenu-link">Spinner</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Spinner' ? 'active' : '' }}">
+                            <a href="{{ url('/component/spinner') }}" class="submenu-link">Spinner</a>
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-toasts.html" class="submenu-link">Toasts</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Toasts' ? 'active' : '' }}">
+                            <a href="{{ url('/component/toasts') }}" class="submenu-link">Toasts</a>
                             
                         </li>
                         

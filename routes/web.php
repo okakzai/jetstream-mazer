@@ -149,4 +149,20 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/spinner', function () {
+        return view('mazer/component/spinner',[
+            'title' => 'Spinner',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
+
+    Route::get('/component/toasts', function () {
+        return view('mazer/component/toasts',[
+            'title' => 'Toasts',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
 });
