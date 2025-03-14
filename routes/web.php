@@ -101,4 +101,20 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/listgroup', function () {
+        return view('mazer/component/listgroup',[
+            'title' => 'List Group',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
+
+    Route::get('/component/modal', function () {
+        return view('mazer/component/modal',[
+            'title' => 'Modal',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

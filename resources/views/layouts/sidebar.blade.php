@@ -106,13 +106,13 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-list-group.html" class="submenu-link">List Group</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'List Group' ? 'active' : '' }}">
+                            <a href="{{ url('/component/listgroup') }}" class="submenu-link">List Group</a>
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-modal.html" class="submenu-link">Modal</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Modal' ? 'active' : '' }}">
+                            <a href="{{ url('/component/modal') }}" class="submenu-link">Modal</a>
                             
                         </li>
                         
