@@ -45,4 +45,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/badge', function () {
+        return view('mazer/component/badge',[
+            'title' => 'Badge',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

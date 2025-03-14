@@ -66,13 +66,13 @@
                             
                         </li>
                         
-                        <li class="submenu-item  {{ ($title ?? '') == 'Alert' ? 'active' : '' }} {{ $title }} {{ $menu }} {{ $submenu }}">
+                        <li class="submenu-item {{ ($title ?? '') == 'Alert' ? 'active' : '' }}">
                             <a href="{{ url('/component/alert') }}" class="submenu-link">Alert</a>
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-badge.html" class="submenu-link">Badge</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Badge' ? 'active' : '' }}">
+                            <a href="{{ url('/component/badge') }}" class="submenu-link">Badge</a>
                             
                         </li>
                         
