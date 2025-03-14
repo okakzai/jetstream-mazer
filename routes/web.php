@@ -69,4 +69,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/card', function () {
+        return view('mazer/component/card',[
+            'title' => 'Card',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

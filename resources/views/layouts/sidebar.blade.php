@@ -86,8 +86,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-card.html" class="submenu-link">Card</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Card' ? 'active' : '' }}">
+                            <a href="{{ url('/component/card') }}" class="submenu-link">Card</a>
                             
                         </li>
                         
