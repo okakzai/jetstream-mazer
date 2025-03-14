@@ -131,8 +131,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-progress.html" class="submenu-link">Progress</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Progress' ? 'active' : '' }}">
+                            <a href="{{ url('/component/progress') }}" class="submenu-link">Progress</a>
                             
                         </li>
                         

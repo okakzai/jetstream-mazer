@@ -141,4 +141,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/progress', function () {
+        return view('mazer/component/progress',[
+            'title' => 'Progress',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
 });
