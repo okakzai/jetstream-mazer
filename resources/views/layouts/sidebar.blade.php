@@ -170,8 +170,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-comment.html" class="submenu-link">Comment</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Comment' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/comment') }}" class="submenu-link">Comment</a>
                             
                         </li>
                         

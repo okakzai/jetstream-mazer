@@ -181,4 +181,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/comment', function () {
+        return view('mazer/extra-component/comment',[
+            'title' => 'Comment',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });
