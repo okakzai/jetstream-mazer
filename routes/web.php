@@ -269,4 +269,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/layout/horizontal', function () {
+        return view('mazer/layout/horizontal',[
+            'title' => 'Layout Horizontal',
+            'menu' => 'layout',
+            'submenu' => true,
+        ]);
+    });
 });

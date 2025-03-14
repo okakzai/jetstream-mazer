@@ -239,8 +239,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="layout-horizontal.html" class="submenu-link">Horizontal Menu</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Layout Horizontal' ? 'active' : '' }}">
+                            <a href="{{ url('/layout/horizontal') }}" class="submenu-link">Horizontal Menu</a>
                             
                         </li>
                         
