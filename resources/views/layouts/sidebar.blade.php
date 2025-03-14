@@ -121,8 +121,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-pagination.html" class="submenu-link">Pagination</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Pagination' ? 'active' : '' }}">
+                            <a href="{{ url('/component/pagination') }}" class="submenu-link">Pagination</a>
                             
                         </li>
                         

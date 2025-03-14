@@ -125,4 +125,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/pagination', function () {
+        return view('mazer/component/pagination',[
+            'title' => 'Pagination',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
 });
