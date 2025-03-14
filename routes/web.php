@@ -61,4 +61,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/button', function () {
+        return view('mazer/component/button',[
+            'title' => 'Button',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

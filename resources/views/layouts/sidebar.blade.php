@@ -81,8 +81,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-button.html" class="submenu-link">Button</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Button' ? 'active' : '' }}">
+                            <a href="{{ url('/component/button') }}" class="submenu-link">Button</a>
                             
                         </li>
                         
