@@ -23,6 +23,18 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('dashboard',[
+            'title' => 'Dashboard',
+            'menu' => false,
+            'submenu' => false,
+        ]);
     })->name('dashboard');
+
+    Route::get('/accordion', function () {
+        return view('accordion',[
+            'title' => 'Accordion',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    })->name('accordion');
 });
