@@ -253,4 +253,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/layout/vertical', function () {
+        return view('mazer/layout/vertical',[
+            'title' => 'Vertical Navbar',
+            'menu' => 'layout',
+            'submenu' => true,
+        ]);
+    });
 });

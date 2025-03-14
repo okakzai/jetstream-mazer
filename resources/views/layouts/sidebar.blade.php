@@ -229,8 +229,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="layout-vertical-navbar.html" class="submenu-link">Vertical Navbar</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Vertical Navbar' ? 'active' : '' }}">
+                            <a href="{{ url('/layout/vertical') }}" class="submenu-link">Vertical Navbar</a>
                             
                         </li>
                         

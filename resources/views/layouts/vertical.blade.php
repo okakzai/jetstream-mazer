@@ -17,7 +17,7 @@
         @include('layouts.sidebar')
 
         <div id="main">
-            @include('layouts.header')
+            @include('layouts.header-vertical')
 
             <div id="main-content">
                 @yield('content')
