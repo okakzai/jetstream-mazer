@@ -93,4 +93,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/dropdown', function () {
+        return view('mazer/component/dropdown',[
+            'title' => 'Dropdown',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

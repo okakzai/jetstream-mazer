@@ -101,8 +101,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-dropdown.html" class="submenu-link">Dropdown</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Dropdown' ? 'active' : '' }}">
+                            <a href="{{ url('/component/dropdown') }}" class="submenu-link">Dropdown</a>
                             
                         </li>
                         
