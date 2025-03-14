@@ -133,4 +133,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/placeholder', function () {
+        return view('mazer/component/placeholder',[
+            'title' => 'Placeholder',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
 });

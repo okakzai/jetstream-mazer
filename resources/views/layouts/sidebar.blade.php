@@ -126,8 +126,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-placeholder.html" class="submenu-link">Placeholder</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Placeholder' ? 'active' : '' }}">
+                            <a href="{{ url('/component/placeholder') }}" class="submenu-link">Placeholder</a>
                             
                         </li>
                         
