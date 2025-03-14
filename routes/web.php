@@ -33,7 +33,7 @@ Route::middleware([
     Route::get('/component/accordion', function () {
         return view('mazer/component/accordion',[
             'title' => 'Accordion',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -41,7 +41,7 @@ Route::middleware([
     Route::get('/component/alert', function () {
         return view('mazer/component/alert',[
             'title' => 'Alert',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -49,7 +49,7 @@ Route::middleware([
     Route::get('/component/badge', function () {
         return view('mazer/component/badge',[
             'title' => 'Badge',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -57,7 +57,7 @@ Route::middleware([
     Route::get('/component/breadcrumb', function () {
         return view('mazer/component/breadcrumb',[
             'title' => 'Breadcrumb',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -65,7 +65,7 @@ Route::middleware([
     Route::get('/component/button', function () {
         return view('mazer/component/button',[
             'title' => 'Button',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -73,7 +73,7 @@ Route::middleware([
     Route::get('/component/card', function () {
         return view('mazer/component/card',[
             'title' => 'Card',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -81,7 +81,7 @@ Route::middleware([
     Route::get('/component/carousel', function () {
         return view('mazer/component/carousel',[
             'title' => 'Carousel',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -89,7 +89,7 @@ Route::middleware([
     Route::get('/component/collapse', function () {
         return view('mazer/component/collapse',[
             'title' => 'Collapse',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -97,7 +97,7 @@ Route::middleware([
     Route::get('/component/dropdown', function () {
         return view('mazer/component/dropdown',[
             'title' => 'Dropdown',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -105,7 +105,7 @@ Route::middleware([
     Route::get('/component/listgroup', function () {
         return view('mazer/component/listgroup',[
             'title' => 'List Group',
-            'menu' => true,
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });
@@ -113,7 +113,15 @@ Route::middleware([
     Route::get('/component/modal', function () {
         return view('mazer/component/modal',[
             'title' => 'Modal',
-            'menu' => true,
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
+
+    Route::get('/component/navs', function () {
+        return view('mazer/component/navs',[
+            'title' => 'Navs',
+            'menu' => 'component',
             'submenu' => true,
         ]);
     });

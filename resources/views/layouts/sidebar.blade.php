@@ -53,7 +53,7 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub {{ ($menu ?? '') == true ? 'active' : '' }}">
+                    class="sidebar-item  has-sub {{ ($menu ?? '') == 'component' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Components</span>
@@ -116,8 +116,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-navs.html" class="submenu-link">Navs</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Navs' ? 'active' : '' }}">
+                            <a href="{{ url('/component/navs') }}" class="submenu-link">Navs</a>
                             
                         </li>
                         
