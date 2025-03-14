@@ -296,8 +296,8 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  ">
-                    <a href="form-layout.html" class='sidebar-link'>
+                    class="sidebar-item {{ ($title ?? '') == 'Form Layout' ? 'active' : '' }}">
+                    <a href="{{ url('/form/layout') }}" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Form Layout</span>
                     </a>

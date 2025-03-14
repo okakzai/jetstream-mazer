@@ -325,4 +325,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/layout', function () {
+        return view('mazer/form/layout',[
+            'title' => 'Form Layout',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });
