@@ -234,8 +234,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="layout-rtl.html" class="submenu-link">RTL Layout</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'RTL Dashboard' ? 'active' : '' }}">
+                            <a href="{{ url('/layout/rtl') }}" class="submenu-link">RTL Layout</a>
                             
                         </li>
                         

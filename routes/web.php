@@ -261,4 +261,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/layout/rtl', function () {
+        return view('mazer/layout/rtl',[
+            'title' => 'RTL Dashboard',
+            'menu' => 'layout',
+            'submenu' => true,
+        ]);
+    });
 });
