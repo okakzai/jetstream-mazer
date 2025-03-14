@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Dashboard')</title>
-    <link rel="stylesheet" href="{{ asset('mazer/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('mazer/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/mazer/compiled/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/mazer/compiled/css/app.css') }}">
     @livewireStyles
 </head>
 <body>
@@ -23,8 +23,8 @@
         </div>
     </div>
 
-    <script src="{{ asset('mazer/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('mazer/js/app.js') }}"></script>
+    <script src="{{ asset('template/mazer/compiled/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('template/mazer/compiled/js/app.js') }}"></script>
     @livewireScripts
 </body>
 </html>
