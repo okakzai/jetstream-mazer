@@ -237,4 +237,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/layout/default', function () {
+        return view('mazer/layout/default',[
+            'title' => 'Layout Default',
+            'menu' => 'layout',
+            'submenu' => true,
+        ]);
+    });
 });

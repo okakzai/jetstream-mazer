@@ -211,16 +211,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'layout' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-grid-1x2-fill"></i>
                         <span>Layouts</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="layout-default.html" class="submenu-link">Default Layout</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Layout Default' ? 'active' : '' }}">
+                            <a href="{{ url('/layout/default') }}" class="submenu-link">Default Layout</a>
                             
                         </li>
                         
