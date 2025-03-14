@@ -195,8 +195,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-toastify.html" class="submenu-link">Toastify</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Toastify' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/toastify') }}" class="submenu-link">Toastify</a>
                             
                         </li>
                         

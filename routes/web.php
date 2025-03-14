@@ -221,4 +221,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/toastify', function () {
+        return view('mazer/extra-component/toastify',[
+            'title' => 'Toastify',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });
