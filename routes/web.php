@@ -213,4 +213,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/sweetalert', function () {
+        return view('mazer/extra-component/sweetalert',[
+            'title' => 'Sweet Alert',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });

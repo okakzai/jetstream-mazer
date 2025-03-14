@@ -190,8 +190,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-sweetalert.html" class="submenu-link">Sweet Alert</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Sweet Alert' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/sweetalert') }}" class="submenu-link">Sweet Alert</a>
                             
                         </li>
                         
