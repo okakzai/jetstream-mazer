@@ -224,8 +224,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="layout-vertical-1-column.html" class="submenu-link">1 Column</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Layout Vertical 1 Column' ? 'active' : '' }}">
+                            <a href="{{ url('/layout/one') }}" class="submenu-link">1 Column</a>
                             
                         </li>
                         

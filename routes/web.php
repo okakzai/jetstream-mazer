@@ -245,4 +245,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/layout/one', function () {
+        return view('mazer/layout/one',[
+            'title' => 'Layout Vertical 1 Column',
+            'menu' => 'layout',
+            'submenu' => true,
+        ]);
+    });
 });
