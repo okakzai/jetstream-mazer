@@ -85,4 +85,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/collapse', function () {
+        return view('mazer/component/collapse',[
+            'title' => 'Collapse',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

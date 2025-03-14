@@ -96,8 +96,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-collapse.html" class="submenu-link">Collapse</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Collapse' ? 'active' : '' }}">
+                            <a href="{{ url('/component/collapse') }}" class="submenu-link">Collapse</a>
                             
                         </li>
                         
