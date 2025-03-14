@@ -1,0 +1,28 @@
+TUTORIAL
+- https://chatgpt.com/c/67d33a69-3cf0-8010-8547-a34ca8fc5a7c
+
+TEKNOLOGI
+- PHP 8.2.12
+- Laravel 10.48.28
+- MariaDB 10.4.32 
+- Node.js 21.7.3
+- Jetstream 4.3.1 (Livewire 3.5.20 + Tailwind CSS 3.1.0)
+- Mazer 2.3.1 (Bootstrap 5.3.3)
+
+DEVELOPMENT
+1. Terminal: composer create-project --prefer-dist laravel/laravel jetstream-mazer "10.*"
+2. Terminal: cd jetstream-mazer
+3. PHPMyAdmin: Buat tabel 'jetstream-mazer'
+4. VSCode: Edit file '.env' terkait koneksi database
+5. Terminal: composer require laravel/jetstream
+6. Terminal: php artisan jetstream:install livewire
+7. Terminal: php artisan migrate
+8. Terminal: npm install && npm run build
+9. Terminal: php artisan serve
+10. Terminal: git init
+11. Terminal: git add .
+12. Terminal: git commit -m "Pertamaz"
+13. Terminal: git branch -M main
+14. Terminal: git remote add origin https://github.com/okakzai/jetstream-mazer.git
+15. Terminal: git pull origin main --rebase
+16. Terminal: git push -u origin main
