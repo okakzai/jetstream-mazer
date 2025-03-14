@@ -66,8 +66,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-alert.html" class="submenu-link">Alert</a>
+                        <li class="submenu-item  {{ ($title ?? '') == 'Alert' ? 'active' : '' }} {{ $title }} {{ $menu }} {{ $submenu }}">
+                            <a href="{{ url('/component/alert') }}" class="submenu-link">Alert</a>
                             
                         </li>
                         

@@ -28,13 +28,21 @@ Route::middleware([
             'menu' => false,
             'submenu' => false,
         ]);
-    })->name('dashboard');
+    });
 
     Route::get('/component/accordion', function () {
-        return view('mazer/accordion',[
+        return view('mazer/component/accordion',[
             'title' => 'Accordion',
             'menu' => true,
             'submenu' => true,
         ]);
-    })->name('component.accordion');
+    });
+
+    Route::get('/component/alert', function () {
+        return view('mazer/component/alert',[
+            'title' => 'Alert',
+            'menu' => true,
+            'submenu' => true,
+        ]);
+    });
 });

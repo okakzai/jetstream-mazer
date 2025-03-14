@@ -26,3 +26,10 @@ DEVELOPMENT
 14. Terminal: git remote add origin https://github.com/okakzai/jetstream-mazer.git
 15. Terminal: git pull origin main --rebase
 16. Terminal: git push -u origin main
+
+MENGHAPUS CACHE
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+php artisan optimize:clear

@@ -12,6 +12,7 @@
 <body>
     <script src="{{ asset('template/mazer/static/js/initTheme.js') }}"></script>
     <div id="app">
+        
         @include('layouts.sidebar')
 
         <div id="main">
