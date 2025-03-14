@@ -265,8 +265,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-input-group.html" class="submenu-link">Input Group</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Input Group' ? 'active' : '' }}">
+                            <a href="{{ url('/form/input-group') }}" class="submenu-link">Input Group</a>
                             
                         </li>
                         

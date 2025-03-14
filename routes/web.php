@@ -285,4 +285,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/input-group', function () {
+        return view('mazer/form/input-group',[
+            'title' => 'Input Group',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });
