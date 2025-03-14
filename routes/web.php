@@ -309,4 +309,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/checkbox', function () {
+        return view('mazer/form/checkbox',[
+            'title' => 'Checkbox',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });

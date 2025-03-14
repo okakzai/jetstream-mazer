@@ -280,8 +280,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-checkbox.html" class="submenu-link">Checkbox</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Checkbox' ? 'active' : '' }}">
+                            <a href="{{ url('/form/checkbox') }}" class="submenu-link">Checkbox</a>
                             
                         </li>
                         
