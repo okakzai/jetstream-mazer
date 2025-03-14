@@ -146,8 +146,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="component-tooltip.html" class="submenu-link">Tooltip</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Tooltip' ? 'active' : '' }}">
+                            <a href="{{ url('/component/tooltip') }}" class="submenu-link">Tooltip</a>
                             
                         </li>
                         

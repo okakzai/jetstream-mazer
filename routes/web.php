@@ -165,4 +165,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/component/tooltip', function () {
+        return view('mazer/component/tooltip',[
+            'title' => 'Tooltip',
+            'menu' => 'component',
+            'submenu' => true,
+        ]);
+    });
 });
