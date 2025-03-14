@@ -189,4 +189,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/divider', function () {
+        return view('mazer/extra-component/divider',[
+            'title' => 'Divider',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });

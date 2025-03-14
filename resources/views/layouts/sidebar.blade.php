@@ -175,8 +175,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-divider.html" class="submenu-link">Divider</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Divider' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/divider') }}" class="submenu-link">Divider</a>
                             
                         </li>
                         
