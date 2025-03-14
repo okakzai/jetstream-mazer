@@ -180,8 +180,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="extra-component-date-picker.html" class="submenu-link">Date Picker</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Date Picker' ? 'active' : '' }}">
+                            <a href="{{ url('/extra-component/datepicker') }}" class="submenu-link">Date Picker</a>
                             
                         </li>
                         

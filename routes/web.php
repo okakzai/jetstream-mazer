@@ -197,4 +197,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/extra-component/datepicker', function () {
+        return view('mazer/extra-component/datepicker',[
+            'title' => 'Date Picker',
+            'menu' => 'extra-component',
+            'submenu' => true,
+        ]);
+    });
 });
