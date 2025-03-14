@@ -306,16 +306,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'form-validation' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-journal-check"></i>
                         <span>Form Validation</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="form-validation-parsley.html" class="submenu-link">Parsley</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Parsley' ? 'active' : '' }}">
+                            <a href="{{ url('/form/parsley') }}" class="submenu-link">Parsley</a>
                             
                         </li>
                         

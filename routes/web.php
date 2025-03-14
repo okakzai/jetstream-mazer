@@ -333,4 +333,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/parsley', function () {
+        return view('mazer/form/parsley',[
+            'title' => 'Parsley',
+            'menu' => 'form-validation',
+            'submenu' => true,
+        ]);
+    });
 });
