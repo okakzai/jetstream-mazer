@@ -301,4 +301,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/radio', function () {
+        return view('mazer/form/radio',[
+            'title' => 'Radio',
+            'menu' => 'form',
+            'submenu' => true,
+        ]);
+    });
 });

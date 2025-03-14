@@ -275,8 +275,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-element-radio.html" class="submenu-link">Radio</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Radio' ? 'active' : '' }}">
+                            <a href="{{ url('/form/radio') }}" class="submenu-link">Radio</a>
                             
                         </li>
                         
