@@ -341,4 +341,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/quill', function () {
+        return view('mazer/form/quill',[
+            'title' => 'Quill',
+            'menu' => 'form-editor',
+            'submenu' => true,
+        ]);
+    });
 });

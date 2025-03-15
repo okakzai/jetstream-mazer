@@ -325,16 +325,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'form-editor' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-pen-fill"></i>
                         <span>Form Editor</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="form-editor-quill.html" class="submenu-link">Quill</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Quill' ? 'active' : '' }}">
+                            <a href="{{ url('/form/quill') }}" class="submenu-link">Quill</a>
                             
                         </li>
                         
