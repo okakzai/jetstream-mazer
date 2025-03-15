@@ -338,8 +338,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-editor-ckeditor.html" class="submenu-link">CKEditor</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'CKEditor' ? 'active' : '' }}">
+                            <a href="{{ url('/form/ckeditor') }}" class="submenu-link">CKEditor</a>
                             
                         </li>
                         

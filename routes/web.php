@@ -349,4 +349,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/ckeditor', function () {
+        return view('mazer/form/ckeditor',[
+            'title' => 'CKEditor',
+            'menu' => 'form-editor',
+            'submenu' => true,
+        ]);
+    });
 });
