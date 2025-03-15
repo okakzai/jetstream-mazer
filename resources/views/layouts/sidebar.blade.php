@@ -348,8 +348,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-editor-tinymce.html" class="submenu-link">TinyMCE</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'TinyMCE' ? 'active' : '' }}">
+                            <a href="{{ url('/form/tinymce') }}" class="submenu-link">TinyMCE</a>
                             
                         </li>
                         

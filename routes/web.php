@@ -365,4 +365,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/tinymce', function () {
+        return view('mazer/form/tinymce',[
+            'title' => 'TinyMCE',
+            'menu' => 'form-editor',
+            'submenu' => true,
+        ]);
+    });
 });
