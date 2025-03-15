@@ -373,4 +373,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/table', function () {
+        return view('mazer/table/table',[
+            'title' => 'Table',
+            'menu' => 'table',
+            'submenu' => true,
+        ]);
+    });
 });
