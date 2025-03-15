@@ -369,16 +369,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'table' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                         <span>Datatables</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="table-datatable.html" class="submenu-link">Datatable</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Datatable' ? 'active' : '' }}">
+                            <a href="{{ url('/table/datatable') }}" class="submenu-link">Datatable</a>
                             
                         </li>
                         

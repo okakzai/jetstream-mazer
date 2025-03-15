@@ -381,4 +381,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/table/datatable', function () {
+        return view('mazer/table/datatable',[
+            'title' => 'Datatable',
+            'menu' => 'table',
+            'submenu' => true,
+        ]);
+    });
 });
