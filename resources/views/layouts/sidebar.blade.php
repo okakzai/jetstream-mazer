@@ -343,8 +343,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="form-editor-summernote.html" class="submenu-link">Summernote</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Summernote' ? 'active' : '' }}">
+                            <a href="{{ url('/form/summernote') }}" class="submenu-link">Summernote</a>
                             
                         </li>
                         

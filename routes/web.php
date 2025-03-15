@@ -357,4 +357,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/summernote', function () {
+        return view('mazer/form/summernote',[
+            'title' => 'Summernote',
+            'menu' => 'form-editor',
+            'submenu' => true,
+        ]);
+    });
 });
