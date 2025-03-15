@@ -382,8 +382,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="table-datatable-jquery.html" class="submenu-link">Datatable (jQuery)</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Datatable jQuery' ? 'active' : '' }}">
+                            <a href="{{ url('/table/datatable-jquery') }}" class="submenu-link">Datatable (jQuery)</a>
                             
                         </li>
                         

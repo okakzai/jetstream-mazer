@@ -389,4 +389,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/table/datatable-jquery', function () {
+        return view('mazer/table/datatable-jquery',[
+            'title' => 'Datatable jQuery',
+            'menu' => 'table',
+            'submenu' => true,
+        ]);
+    });
 });
