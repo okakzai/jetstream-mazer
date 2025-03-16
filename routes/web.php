@@ -397,4 +397,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/widget/chatbox', function () {
+        return view('mazer/widget/chatbox',[
+            'title' => 'Chatbox',
+            'menu' => 'widget',
+            'submenu' => true,
+        ]);
+    });
 });

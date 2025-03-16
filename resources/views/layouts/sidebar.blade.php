@@ -395,16 +395,16 @@
                 <li class="sidebar-title">Extra UI</li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'widget' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-pentagon-fill"></i>
                         <span>Widgets</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-widgets-chatbox.html" class="submenu-link">Chatbox</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Chatbox' ? 'active' : '' }}">
+                            <a href="{{ url('/widget/chatbox') }}" class="submenu-link">Chatbox</a>
                             
                         </li>
                         
