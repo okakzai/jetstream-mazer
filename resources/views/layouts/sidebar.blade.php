@@ -408,8 +408,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-widgets-pricing.html" class="submenu-link">Pricing</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Pricing' ? 'active' : '' }}">
+                            <a href="{{ url('/widget/pricing') }}" class="submenu-link">Pricing</a>
                             
                         </li>
                         

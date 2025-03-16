@@ -405,4 +405,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/widget/pricing', function () {
+        return view('mazer/widget/pricing',[
+            'title' => 'Pricing',
+            'menu' => 'widget',
+            'submenu' => true,
+        ]);
+    });
 });
