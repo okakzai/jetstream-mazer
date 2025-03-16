@@ -413,8 +413,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-widgets-todolist.html" class="submenu-link">To-do List</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Todo List' ? 'active' : '' }}">
+                            <a href="{{ url('/widget/todo-list') }}" class="submenu-link">To-do List</a>
                             
                         </li>
                         

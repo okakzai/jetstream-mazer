@@ -413,4 +413,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/widget/todo-list', function () {
+        return view('mazer/widget/todo-list',[
+            'title' => 'Todo List',
+            'menu' => 'widget',
+            'submenu' => true,
+        ]);
+    });
 });
