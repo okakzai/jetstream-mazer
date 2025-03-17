@@ -505,8 +505,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-map-leaflet.html" class="submenu-link">Leaflet Map</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Leaflet Map' ? 'active' : '' }}">
+                            <a href="{{ url('/map/leaflet') }}" class="submenu-link">Leaflet Map</a>
                             
                         </li>
                         

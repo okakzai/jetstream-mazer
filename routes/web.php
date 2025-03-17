@@ -485,4 +485,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/map/leaflet', function () {
+        return view('mazer/map/leaflet',[
+            'title' => 'Leaflet Map',
+            'menu' => 'map',
+            'submenu' => true,
+        ]);
+    });
 });
