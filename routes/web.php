@@ -469,4 +469,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/map/google-map', function () {
+        return view('mazer/map/google-map',[
+            'title' => 'Google Map',
+            'menu' => 'map',
+            'submenu' => true,
+        ]);
+    });
 });

@@ -487,16 +487,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'map' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-map-fill"></i>
                         <span>Maps</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-map-google-map.html" class="submenu-link">Google Map</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Google Map' ? 'active' : '' }}">
+                            <a href="{{ url('/map/google-map') }}" class="submenu-link">Google Map</a>
                             
                         </li>
                         
