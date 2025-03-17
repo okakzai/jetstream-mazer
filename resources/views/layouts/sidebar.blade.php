@@ -442,8 +442,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-icons-dripicons.html" class="submenu-link">Dripicons</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Dripicons' ? 'active' : '' }}">
+                            <a href="{{ url('/icon/dripicons') }}" class="submenu-link">Dripicons</a>
                             
                         </li>
                         

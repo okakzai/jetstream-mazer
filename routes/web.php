@@ -437,4 +437,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/icon/dripicons', function () {
+        return view('mazer/icon/dripicons',[
+            'title' => 'Dripicons',
+            'menu' => 'icon',
+            'submenu' => true,
+        ]);
+    });
 });
