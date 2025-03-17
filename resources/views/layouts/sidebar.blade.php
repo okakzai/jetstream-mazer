@@ -591,8 +591,8 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  ">
-                    <a href="application-gallery.html" class='sidebar-link'>
+                    class="sidebar-item {{ ($title ?? '') == 'Photo Gallery' ? 'active' : '' }}">
+                    <a href="{{ url('/page/gallery') }}" class='sidebar-link'>
                         <i class="bi bi-image-fill"></i>
                         <span>Photo Gallery</span>
                     </a>

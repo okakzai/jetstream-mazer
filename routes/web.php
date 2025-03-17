@@ -526,4 +526,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/page/gallery', function () {
+        return view('mazer/page/gallery',[
+            'title' => 'Photo Gallery',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });
