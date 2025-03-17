@@ -566,4 +566,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/auth/register', function () {
+        return view('mazer/auth/register',[
+            'title' => 'Register',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });

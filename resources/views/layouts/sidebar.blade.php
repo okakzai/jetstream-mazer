@@ -649,7 +649,7 @@
                         </li>
                         
                         <li class="submenu-item  ">
-                            <a href="auth-register.html" class="submenu-link">Register</a>
+                            <a href="{{url('/auth/register')}}" class="submenu-link">Register</a>
                             
                         </li>
                         
