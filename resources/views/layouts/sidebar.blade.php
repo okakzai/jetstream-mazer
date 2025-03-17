@@ -521,22 +521,22 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'menu' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-three-dots"></i>
                         <span>Multi-level Menu</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  has-sub">
+                        <li class="submenu-item has-sub {{ ($submenu2 ?? '') == true ? 'active' : '' }}">
                             <a href="#" class="submenu-link">First Level</a>
                             
-                            <ul class="submenu submenu-level-2 ">
+                            <ul class="submenu submenu-level-2">
 
                                 
-                                <li class="submenu-item ">
-                                    <a href="ui-multi-level-menu.html" class="submenu-link">Second Level</a>
+                                <li class="submenu-item  {{ ($title ?? '') == 'Multi Level Menu' ? 'active' : '' }}">
+                                    <a href="{{ url('/menu/multi-level') }}" class="submenu-link">Second Level</a>
                                 </li>
                                 
                                 <li class="submenu-item ">

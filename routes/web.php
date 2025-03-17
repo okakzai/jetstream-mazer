@@ -501,4 +501,13 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/menu/multi-level', function () {
+        return view('mazer/menu/multi-level',[
+            'title' => 'Multi Level Menu',
+            'menu' => 'menu',
+            'submenu' => true,
+            'submenu2' => true,
+        ]);
+    });
 });
