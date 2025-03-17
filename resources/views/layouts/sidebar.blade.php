@@ -611,16 +611,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'account' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-person-circle"></i>
                         <span>Account</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="account-profile.html" class="submenu-link">Profile</a>
+                        <li class="submenu-item  {{ ($title ?? '') == 'Account Profile' ? 'active' : '' }}">
+                            <a href="{{ url('/page/account-profile') }}" class="submenu-link">Profile</a>
                             
                         </li>
                         

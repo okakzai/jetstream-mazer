@@ -542,4 +542,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/page/account-profile', function () {
+        return view('mazer/page/account-profile',[
+            'title' => 'Account Profile',
+            'menu' => 'account',
+            'submenu' => true,
+        ]);
+    });
 });
