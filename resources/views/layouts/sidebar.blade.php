@@ -510,8 +510,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-map-openlayers.html" class="submenu-link">OpenLayers Map</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'OpenLayers Map' ? 'active' : '' }}">
+                            <a href="{{ url('/map/openlayers') }}" class="submenu-link">OpenLayers Map</a>
                             
                         </li>
                         

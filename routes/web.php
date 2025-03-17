@@ -493,4 +493,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/map/openlayers', function () {
+        return view('mazer/map/openlayers',[
+            'title' => 'OpenLayers Map',
+            'menu' => 'map',
+            'submenu' => true,
+        ]);
+    });
 });
