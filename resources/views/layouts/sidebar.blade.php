@@ -644,7 +644,7 @@
                     <ul class="submenu ">
                         
                         <li class="submenu-item  ">
-                            <a href="auth-login.html" class="submenu-link">Login</a>
+                            <a href="{{url('/auth/login')}}" class="submenu-link">Login</a>
                             
                         </li>
                         

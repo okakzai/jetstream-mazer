@@ -558,4 +558,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/auth/login', function () {
+        return view('mazer/auth/login',[
+            'title' => 'Login',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });
