@@ -550,4 +550,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/page/account-security', function () {
+        return view('mazer/page/account-security',[
+            'title' => 'Account Security',
+            'menu' => 'account',
+            'submenu' => true,
+        ]);
+    });
 });

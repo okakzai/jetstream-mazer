@@ -619,13 +619,13 @@
                     
                     <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  {{ ($title ?? '') == 'Account Profile' ? 'active' : '' }}">
+                        <li class="submenu-item {{ ($title ?? '') == 'Account Profile' ? 'active' : '' }}">
                             <a href="{{ url('/page/account-profile') }}" class="submenu-link">Profile</a>
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="account-security.html" class="submenu-link">Security</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Account Security' ? 'active' : '' }}">
+                            <a href="{{ url('/page/account-security') }}" class="submenu-link">Security</a>
                             
                         </li>
                         
