@@ -477,4 +477,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/map/js-vector-map', function () {
+        return view('mazer/map/js-vector-map',[
+            'title' => 'JS Vector Map',
+            'menu' => 'map',
+            'submenu' => true,
+        ]);
+    });
 });

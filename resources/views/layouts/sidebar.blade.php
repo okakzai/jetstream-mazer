@@ -500,8 +500,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-map-jsvectormap.html" class="submenu-link">JS Vector Map</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'JS Vector Map' ? 'active' : '' }}">
+                            <a href="{{ url('/map/js-vector-map') }}" class="submenu-link">JS Vector Map</a>
                             
                         </li>
                         
