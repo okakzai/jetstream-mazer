@@ -453,4 +453,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/chart/apexcharts', function () {
+        return view('mazer/chart/apexcharts',[
+            'title' => 'Apexcharts',
+            'menu' => 'chart',
+            'submenu' => true,
+        ]);
+    });
 });

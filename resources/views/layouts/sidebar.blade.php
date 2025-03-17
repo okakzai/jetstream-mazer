@@ -466,8 +466,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-chart-apexcharts.html" class="submenu-link">Apexcharts</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Apexcharts' ? 'active' : '' }}">
+                            <a href="{{ url('/chart/apexcharts') }}" class="submenu-link">Apexcharts</a>
                             
                         </li>
                         
