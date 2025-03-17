@@ -510,4 +510,12 @@ Route::middleware([
             'submenu2' => true,
         ]);
     });
+
+    Route::get('/page/email', function () {
+        return view('mazer/page/email',[
+            'title' => 'Email Application',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });

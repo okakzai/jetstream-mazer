@@ -571,8 +571,8 @@
                 <li class="sidebar-title">Pages</li>
                 
                 <li
-                    class="sidebar-item  ">
-                    <a href="application-email.html" class='sidebar-link'>
+                    class="sidebar-item {{ ($title ?? '') == 'Email Application' ? 'active' : '' }}">
+                    <a href="{{ url('/page/email') }}" class='sidebar-link'>
                         <i class="bi bi-envelope-fill"></i>
                         <span>Email Application</span>
                     </a>
