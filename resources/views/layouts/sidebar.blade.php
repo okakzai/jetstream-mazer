@@ -437,8 +437,8 @@
                             
                         </li>
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-icons-fontawesome.html" class="submenu-link">Fontawesome</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Fontawesome' ? 'active' : '' }}">
+                            <a href="{{ url('/icon/fontawesome') }}" class="submenu-link">Fontawesome</a>
                             
                         </li>
                         

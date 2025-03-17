@@ -429,4 +429,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/icon/fontawesome', function () {
+        return view('mazer/icon/fontawesome',[
+            'title' => 'Fontawesome',
+            'menu' => 'icon',
+            'submenu' => true,
+        ]);
+    });
 });
