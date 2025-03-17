@@ -518,4 +518,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/page/chat', function () {
+        return view('mazer/page/chat',[
+            'title' => 'Chat Application',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });
