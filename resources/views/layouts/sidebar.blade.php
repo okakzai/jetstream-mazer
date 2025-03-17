@@ -453,16 +453,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'chart' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-bar-chart-fill"></i>
                         <span>Charts</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-chart-chartjs.html" class="submenu-link">ChartJS</a>
+                        <li class="submenu-item {{ ($title ?? '') == 'ChartJS' ? 'active' : '' }}">
+                            <a href="{{ url('/chart/chartjs') }}" class="submenu-link">ChartJS</a>
                             
                         </li>
                         

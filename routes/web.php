@@ -445,4 +445,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/chart/chartjs', function () {
+        return view('mazer/chart/chartjs',[
+            'title' => 'ChartJS',
+            'menu' => 'chart',
+            'submenu' => true,
+        ]);
+    });
 });
