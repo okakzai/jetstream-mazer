@@ -654,7 +654,7 @@
                         </li>
                         
                         <li class="submenu-item  ">
-                            <a href="auth-forgot-password.html" class="submenu-link">Forgot Password</a>
+                            <a href="{{url('/auth/forgot')}}" class="submenu-link">Forgot Password</a>
                             
                         </li>
                         

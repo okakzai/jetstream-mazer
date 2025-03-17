@@ -574,4 +574,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/auth/forgot', function () {
+        return view('mazer/auth/forgot',[
+            'title' => 'Forgot Password',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });
