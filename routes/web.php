@@ -534,4 +534,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/page/checkout', function () {
+        return view('mazer/page/checkout',[
+            'title' => 'Checkout Page',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });

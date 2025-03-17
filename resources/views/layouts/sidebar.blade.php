@@ -601,8 +601,8 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  ">
-                    <a href="application-checkout.html" class='sidebar-link'>
+                    class="sidebar-item {{ ($title ?? '') == 'Checkout Page' ? 'active' : '' }}">
+                    <a href="{{ url('/page/checkout') }}" class='sidebar-link'>
                         <i class="bi bi-basket-fill"></i>
                         <span>Checkout Page</span>
                     </a>
