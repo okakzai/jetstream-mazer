@@ -424,16 +424,16 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item has-sub {{ ($menu ?? '') == 'icon' ? 'active' : '' }}">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-egg-fill"></i>
                         <span>Icons</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu {{ ($submenu ?? '') == true ? 'active' : '' }}">
                         
-                        <li class="submenu-item  ">
-                            <a href="ui-icons-bootstrap-icons.html" class="submenu-link">Bootstrap Icons </a>
+                        <li class="submenu-item {{ ($title ?? '') == 'Bootstrap Icons' ? 'active' : '' }}">
+                            <a href="{{ url('/icon/bootstrap') }}" class="submenu-link">Bootstrap Icons </a>
                             
                         </li>
                         

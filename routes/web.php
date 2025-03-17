@@ -421,4 +421,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/icon/bootstrap', function () {
+        return view('mazer/icon/bootstrap',[
+            'title' => 'Bootstrap Icons',
+            'menu' => 'icon',
+            'submenu' => true,
+        ]);
+    });
 });
