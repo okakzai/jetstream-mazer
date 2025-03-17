@@ -477,8 +477,8 @@
                 </li>
                 
                 <li
-                    class="sidebar-item  ">
-                    <a href="ui-file-uploader.html" class='sidebar-link'>
+                    class="sidebar-item {{ ($title ?? '') == 'File Uploader' ? 'active' : '' }}">
+                    <a href="{{ url('/form/upload') }}" class='sidebar-link'>
                         <i class="bi bi-cloud-arrow-up-fill"></i>
                         <span>File Uploader</span>
                     </a>

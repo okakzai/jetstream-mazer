@@ -461,4 +461,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/form/upload', function () {
+        return view('mazer/form/upload',[
+            'title' => 'File Uploader',
+            'menu' => '',
+            'submenu' => true,
+        ]);
+    });
 });
