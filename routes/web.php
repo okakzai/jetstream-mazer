@@ -598,4 +598,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/error/500', function () {
+        return view('mazer/error/500',[
+            'title' => '500',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });

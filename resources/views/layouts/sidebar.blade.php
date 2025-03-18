@@ -683,7 +683,7 @@
                         </li>
                         
                         <li class="submenu-item  ">
-                            <a href="error-500.html" class="submenu-link">500</a>
+                            <a href="{{url('/error/500')}}" class="submenu-link">500</a>
                             
                         </li>
                         
