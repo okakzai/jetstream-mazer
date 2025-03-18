@@ -673,7 +673,7 @@
                     <ul class="submenu ">
                         
                         <li class="submenu-item  ">
-                            <a href="error-403.html" class="submenu-link">403</a>
+                            <a href="{{url('/error/403')}}" class="submenu-link">403</a>
                             
                         </li>
                         

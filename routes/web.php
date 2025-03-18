@@ -582,4 +582,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/error/403', function () {
+        return view('mazer/error/403',[
+            'title' => '403',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });
