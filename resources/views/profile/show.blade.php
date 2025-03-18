@@ -35,22 +35,22 @@
             <div class="card">
                 <div class="card-body">
                     @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
-                        <div class="mt-10 sm:mt-0">
-                            @livewire('profile.update-password-form')
-                        </div>
-
+                        @livewire('profile.update-password-form')
+                       
                         <x-section-border />
                     @endif
                 </div>
             </div>
 
-            @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.two-factor-authentication-form')
+            <div class="card">
+                <div class="card-body">
+                    @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
+                        @livewire('profile.two-factor-authentication-form')
+                       
+                        <x-section-border />
+                    @endif
                 </div>
-
-                <x-section-border />
-            @endif
+            </div>
 
             <div class="mt-10 sm:mt-0">
                 @livewire('profile.logout-other-browser-sessions-form')
