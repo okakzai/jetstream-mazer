@@ -678,7 +678,7 @@
                         </li>
                         
                         <li class="submenu-item  ">
-                            <a href="error-404.html" class="submenu-link">404</a>
+                            <a href="{{url('/error/404')}}" class="submenu-link">404</a>
                             
                         </li>
                         

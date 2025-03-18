@@ -590,4 +590,12 @@ Route::middleware([
             'submenu' => true,
         ]);
     });
+
+    Route::get('/error/404', function () {
+        return view('mazer/error/404',[
+            'title' => '404',
+            'menu' => 'auth',
+            'submenu' => true,
+        ]);
+    });
 });
