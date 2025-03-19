@@ -26,8 +26,6 @@
                 <div class="card-body">
                     @if (Laravel\Fortify\Features::canUpdateProfileInformation())
                         @livewire('profile.update-profile-information-form')
-
-                        <x-section-border />
                     @endif
                 </div>
             </div>
@@ -36,8 +34,6 @@
                 <div class="card-body">
                     @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
                         @livewire('profile.update-password-form')
-                       
-                        <x-section-border />
                     @endif
                 </div>
             </div>
@@ -45,9 +41,7 @@
             <div class="card">
                 <div class="card-body">
                     @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
-                        @livewire('profile.two-factor-authentication-form')
-                       
-                        <x-section-border />
+                        @livewire('profile.two-factor-authentication-form')            
                     @endif
                 </div>
             </div>
@@ -61,8 +55,6 @@
             <div class="card">
                 <div class="card-body">
                     @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
-                        <x-section-border />
-
                         @livewire('profile.delete-user-form')
                     @endif
                 </div>

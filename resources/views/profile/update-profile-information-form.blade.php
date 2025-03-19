@@ -6,7 +6,7 @@
     <x-slot name="description">
         {{ __('Update your account\'s profile information and email address.') }}
     </x-slot>
-
+    
     <x-slot name="form">
         <!-- Profile Photo -->
         @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -84,12 +84,14 @@
     </x-slot>
 
     <x-slot name="actions">
-        <x-action-message class="" on="saved">
-            {{ __('Saved.') }}
-        </x-action-message>
+        <div class="d-flex align-items-center mt-3">
+           <x-button-mazer wire:loading.attr="disabled" wire:target="photo">
+                {{ __('Save') }}
+            </x-button-mazer>
 
-        <x-button-mazer wire:loading.attr="disabled" wire:target="photo">
-            {{ __('Save') }}
-        </x-button-mazer>
+            <x-action-message class="ms-3" on="saved">
+                {{ __('Saved') }}
+            </x-action-message>
+        </div>
     </x-slot>
 </x-form-section>

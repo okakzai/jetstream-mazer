@@ -28,12 +28,13 @@
     </x-slot>
 
     <x-slot name="actions">
-        <x-action-message class="me-3" on="saved">
-            {{ __('Saved.') }}
-        </x-action-message>
-
-        <x-button-mazer>
-            {{ __('Save') }}
-        </x-button-mazer>
+        <div class="d-flex align-items-center mt-3">
+            <x-button-mazer>
+                {{ __('Save') }}
+            </x-button-mazer>
+            <x-action-message class="ms-3" on="saved">
+                {{ __('Saved') }}
+            </x-action-message>
+        </div>
     </x-slot>
 </x-form-section>
