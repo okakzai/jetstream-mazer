@@ -52,17 +52,21 @@
                 </div>
             </div>
 
-            <div class="mt-10 sm:mt-0">
-                @livewire('profile.logout-other-browser-sessions-form')
+            <div class="card">
+                <div class="card-body">
+                    @livewire('profile.logout-other-browser-sessions-form')
+                </div>
             </div>
 
-            @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
-                <x-section-border />
+            <div class="card">
+                <div class="card-body">
+                    @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
+                        <x-section-border />
 
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.delete-user-form')
+                        @livewire('profile.delete-user-form')
+                    @endif
                 </div>
-            @endif
+            </div>    
         <!-- </div> -->
     </div>
 @endsection
